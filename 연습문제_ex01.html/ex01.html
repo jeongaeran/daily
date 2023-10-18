@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //사용자에게 정수를 입력받아 input변수에 저장
+       let input = prompt("숫자를 입력해주세요.");
+
+       if(input % 3 ==0){
+        document.write(input+"은(는) 3의 배수이다." );
+       }else{
+        document.write(input + "은(는) 3의 배수가 아니다.");
+
+       }//최소버튼을 누르면 null이 나오고
+
+       //반복하면서 사용자에게 값을 입력받아 
+       //3의 배수인지 아닌지를 출력
+       while(true){
+        input=prompt("정수를 입력해주세요.")
+        let answer="숫자가 아닙니다.";
+       
+       if(input==null || input=="" ||isNAN(input)){
+        alert(answer);
+        break;
+       }
+       if(input %3 ==0){
+        answer =input+ "은(는) 3의 배수입니다.";
+       }else{
+        answer =input+ "은(는) 3의 배수가아닙니다.";
+       }
+
+       }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

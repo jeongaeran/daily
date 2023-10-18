@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       
+        let even=0,//짝수합계
+            odd=0, //홀수합계
+            i=0,   //증가하는 값을 저장하는 변수
+            sum=0; //전체합계
+        
+            //홀수의 합
+            for(i=1; i<=100; i=i+2){
+                odd= odd +i;
+            }
+            //짝수의 합
+            for(i=2; i<=100; i=i+2){
+                even= even +i;
+            }
+            for(i=1; i<=100; i++){
+                sum= sum +1;
+            }
+
+        ///////////////////////////////////////////
+        even=0,
+        odd=0,
+        sum=0;
+        for(i=1; i<=100; i++){
+            if(i % 2==0){
+                even= even +i;
+            }
+            if(i % 2==1){
+                odd= odd +i;
+            }
+            sum= sum +i;
+        }
+
+        /////////////////////////////////////////////
+        odd =even=sum=0;
+        for(i=1; i<100; i=i+2){
+            odd= odd+i;
+            even= even +(i+1);
+        }
+        sum= odd+ even;
+
+      document.write(`홀수 합계는 ${odd} <br/>`);
+      document.write(`짝수 합계는 ${even} <br/>`);
+      document.write(`전체 합계는 ${sum} <br/>`);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숫자맞추기 게임</title>
+        <script>
+            //횟수가 정해지지않았고 최초 한번은 무조건입력값이 있다
+            //do-while
+
+            let guess=78;//정답숫자 지정해줌
+            let isRun= true; //반복문 탈출 flag
+
+            let count=0;//추측횟수를 저장할 변수
+            let msg=""; //결과 메세지를 저장할 변수
+            do{
+                let input=prompt("1~100까지의 정수를 입력해주세요.");
+                if(input==guess){
+                    msg="성공입니다.";
+                    isRun=false;
+                    //break;는 아래 메세지없이 바로 종료된다
+                }else if(input<guess){
+                    msg="낮습니다.";
+                }else{
+                    msg="높습니다.";
+                }count++
+                alert(msg+"추측횟수 :" +count);
+            }while(isRun);
+
+
+        </script>
+</head>
+<body>
+    
+</body>
+</html>
