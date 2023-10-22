@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>style attribute</title>
+</head>
+<body>
+    <p id="p1">
+        this is paragraph
+    </p>
+    <button onclick="changeStyle();">눌러보세요</button>
+    <script>
+        console.log(document.head);
+        console.log(document.body);
+
+    function changeStyle(){
+        let p1=document.getElementById("p1");
+        //p1태그 요소컨텐츠의 text 노드의 색상 변경
+        p1.style.color="pink";
+        p1.style.fontstyle = "italic";
+        //body의 배경색상 backgound-color를 skyblue로 변경
+        document.body.style.backgroundColor="skyblue";
+        document.body.style.backgroundImage="url(../img/poodle.png)";
+        document.body.style.backgroundRepeat="no-repeat"
+    }
+    </script>
+</body>
+</html>
